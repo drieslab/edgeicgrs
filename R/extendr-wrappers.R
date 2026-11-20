@@ -10,4 +10,9 @@ NULL
 #' @keywords internal
 rs_crossprod <- function(a, b, threads) .Call(wrap__rs_crossprod, a, b, threads)
 
+#' Internal FFI: a %*% b. Use the user-facing [`matprod_rs()`] wrapper.
+#'
+#' @keywords internal
+rs_matprod <- function(a, b, threads) .Call(wrap__rs_matprod, a, b, threads)
+
 # nolint end
