@@ -1,0 +1,22 @@
+[package]
+name = 'edgeicgrs'
+publish = false
+version = '0.1.0'
+edition = '2021'
+rust-version = '1.65'
+
+[lib]
+crate-type = [ 'rlib', 'staticlib' ]
+name = 'edgeicgrs'
+
+[[bin]]
+name = 'document'
+path = 'document.rs'
+
+[dependencies]
+extendr-api = '0.9.0'
+faer = { version = '0.22', default-features = false, features = ['std', 'rayon'] }
+
+[profile.release]
+lto = true
+codegen-units = 1
