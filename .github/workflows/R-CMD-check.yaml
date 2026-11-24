@@ -43,3 +43,5 @@ jobs:
           upload-snapshots: true
           build_args: 'c("--no-manual")'
           args: 'c("--no-manual", "--as-cran")'
+          # "Downloads Rust crates" is a WARNING until the crates are vendored (CRAN only)
+          error-on: '"error"'
