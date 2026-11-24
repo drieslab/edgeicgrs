@@ -6,7 +6,7 @@
 \alias{edgeicgrs-package}
 \title{edgeicgrs: compiled kernels for edgeicg}
 \description{
-Rust backend of the edgeicg package, following the smotif / smotifrs split: edgeicg is pure R and works
+Rust backend of the edgeicg package. edgeicg is pure R and works
 without this package; with it installed, \code{edgeicg(backend = "auto")} runs its matrix cross-products through
 \code{\link[=crossprod_rs]{crossprod_rs()}}.
 }

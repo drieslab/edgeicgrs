@@ -1,6 +1,6 @@
 # edgeicgrs
 
-The Rust backend for [edgeicg](https://github.com/drieslab/edgeicg). The split is the same as smotif / smotifrs: edgeicg is pure R and works without this package. With it installed, `edgeicg(backend = "auto")` runs its matrix products here.
+The Rust backend for [edgeicg](https://github.com/drieslab/edgeicg). edgeicg is pure R and works without this package. With it installed, `edgeicg(backend = "auto")` runs its matrix products here.
 
 The kernels are generic, so any package can use them:
 
@@ -14,4 +14,4 @@ Both use faer's cache-blocked SIMD matrix multiply, so their speed does not depe
 ## Build
 - **Requirements:** Cargo and rustc (≥ 1.65).
 - **Crates:** the build downloads them; a `src/rust/vendor.tar.xz` (from `rextendr::vendor_pkgs()`) is used offline when present.
-- **Scaffolding:** follows smotifrs (extendr 0.9).
+- **Bindings:** extendr 0.9.
